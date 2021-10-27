@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+.navbar{
+  background-color: #e8cebf;
+  padding:30px 20%;
+}
+
+.AppTitle{
+  font-size: 90px;
+  font-family: 'Dosis', sans-serif;
+}
+.homePageImg{
+  position:absolute;
+  right:0%;
+  width:400px;
+  padding-right: 20px;
+}
+
+.navbarbuttoncss{
+  font-size:17px;
+  padding: 10px 22px;
+  background-color: #e1eedd;
+  border-radius: 10px;
+  border:5px solid pink;
+  font-family: 'Dosis', sans-serif;
+  margin-left:10px;
+}
+.navbarbuttoncss:hover{
+   cursor: pointer;
+   background-color: #266150;
+   color: #fefbe9;
+}
+.homepageTextbox{
+border:10px solid pink;
+margin-right: 450px;
+padding:70px 70px 100px 100px;
+background-color: #ddaf94
+}
