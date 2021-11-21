@@ -7,7 +7,7 @@ import AboutMe from './AboutMe';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Connect from './Connect';
-import {Motion, spring} from 'react-motion';
+// import {Motion, spring} from 'react-motion';
 
 
 import { 
@@ -31,7 +31,10 @@ function App() {
         </div>
      </Route>
      <Route exact path="/aboutme">
-          <AboutMe />
+       
+          <AboutMe >
+          
+            </AboutMe>
      </Route>
      <Route exact path="/resume">
        <Resume />
@@ -42,9 +45,7 @@ function App() {
      <Route exact path="/connect">
       <Connect />
     </Route> 
-    <Motion defaultStyle={{x: 0}} style={{x: spring(10)}}>
-      {value => <div> hello </div>}
-     </Motion>
+    
    
   </Switch>
   </div>
@@ -52,5 +53,6 @@ function App() {
  </div>
   )
 }
+
 
 export default App;

@@ -3,23 +3,23 @@ import { NavLink, useHistory } from 'react-router-dom';
 
 function Navbar(){
     return(
-        <div>
+        <div class="flex-container">
 
             
             <NavLink to ="/aboutme">
-           <button className="navbarbuttoncss"> About Me </button>
+           <button className="navbarbuttoncss flex-child"> About Me </button>
             </NavLink>
             <NavLink to ="/resume">
-            <button className="navbarbuttoncss"> Resume </button>
+            <button className="navbarbuttoncss flex-child"> Resume </button>
             </NavLink>
             <NavLink to ="/portfolio">
-            <button className="navbarbuttoncss"> Portfolio </button>
+            <button className="navbarbuttoncss flex-child"> Portfolio </button>
             </NavLink>
             <NavLink to ="/connect">
-            <button className="navbarbuttoncss"> Connect </button>
+            <button className="navbarbuttoncss flex-child"> Connect </button>
             </NavLink>
             <NavLink to ="/">
-                <button className="navbarbuttoncss"> Home</button>
+                <button className="navbarbuttoncss flex-child"> Home</button>
             </NavLink>
         </div>
     )

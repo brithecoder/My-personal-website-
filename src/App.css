@@ -13,8 +13,9 @@
 .homePageImg{
   position:absolute;
   right:0%;
+  border-radius: 15px;
   width:400px;
-  padding-right: 20px;
+  padding-right: 12px;
 }
 
 .navbarbuttoncss{
@@ -37,3 +38,26 @@ margin-right: 450px;
 padding:70px 70px 100px 100px;
 background-color: #ddaf94
 }
+.circles{
+  border:9px solid pink;
+  border-radius:50%;
+  width: 200px;
+  height: 200px;
+  align-items:flex-boxbaseline;
+}
+.motionDiv{
+  width:200px;
+  
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  /* border: 2px solid yellow; */
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 

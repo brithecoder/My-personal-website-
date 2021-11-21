@@ -1,9 +1,49 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Portfolio(){
     return(
         <div>
               <h2> This is portfolio </h2> 
+            <div className="flex-container">
+            <motion.div className="motionDiv flex-child"
+         whileHover={{ scale: 1.2, rotate: 90 }}
+         whileTap={{
+           scale: 0.8,
+           rotate: -90,
+           borderRadius: "100%"
+         }}
+       >
+       <button className="circles">
+         This site 
+       </button>
+         </motion.div>
+         <motion.div className="motionDiv flex-child"
+         whileHover={{ scale: 1.2, rotate: 90 }}
+         whileTap={{
+           scale: 0.8,
+           rotate: -90,
+           borderRadius: "100%"
+         }}
+       >
+       <button className="circles">
+         Nail Code 
+       </button>
+         </motion.div>
+         <motion.div className="motionDiv flex-child"
+         whileHover={{ scale: 1.2, rotate: 90 }}
+         whileTap={{
+           scale: 0.8,
+           rotate: -90,
+           borderRadius: "100%"
+         }}
+       >
+       <button className="circles">
+         Ninalem
+       </button>
+         </motion.div>
+            </div>
+
         </div>
     )
 }
