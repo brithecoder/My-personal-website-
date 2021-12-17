@@ -3,7 +3,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 
 function Navbar(){
     return(
-        <div class="flex-container">
+        <div class="navbar">
 
             
             <NavLink to ="/aboutme">

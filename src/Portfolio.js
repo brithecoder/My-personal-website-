@@ -5,7 +5,7 @@ function Portfolio(){
     return(
         <div>
               <h2> This is portfolio </h2> 
-            <div className="flex-container">
+            <div className="circle-flex-container">
             <motion.div className="motionDiv flex-child"
          whileHover={{ scale: 1.2, rotate: 90 }}
          whileTap={{

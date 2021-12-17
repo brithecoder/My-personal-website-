@@ -8,6 +8,7 @@ import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Connect from './Connect';
 import Box from '@mui/material/Box';
+import HamburgerMenu from './HamburgerMenu';
 import {styled} from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
@@ -24,34 +25,50 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+function detectMob() {
+  const toMatch = [
+      /Android/i,
+      /webOS/i,
+      /iPhone/i,
+      /iPad/i,
+      /iPod/i,
+      /BlackBerry/i,
+      /Windows Phone/i
+  ];
+  console.log("hellow world");
+  console.log("user agent: " + navigator.userAgent);
+  return toMatch.some((toMatchItem) => {
+      return navigator.userAgent.match(toMatchItem);
+  });
+}
+
 function App() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing ={{xs:2, md:3}} columns={{ xs: 4, sm: 8, md: 12 }}>
         <div className="app">
            <div className="container">
-               <div className="navbar">
-                     <Navbar />
-                     <Switch>
-                        <Route exact path="/">
-                            <div className='secondiv'>
-                              <Secondcomponent  />
-                             </div>
-                        </Route>
-                       <Route exact path="/aboutme">
-                           <AboutMe />
-                       </Route>
-                       <Route exact path="/resume">
-                         <Resume />
-                       </Route>
-                       <Route exact path="/portfolio">
-                         <Portfolio />
-                       </Route>
-                       <Route exact path="/connect">
-                          <Connect />
-                       </Route> 
-                     </Switch>
-               </div>
+              <Navbar className="navbar"/>
+              <HamburgerMenu className="hamburgerMenu"/>
+              <Switch>
+                <Route exact path="/">
+                    <div className='secondiv'>
+                      <Secondcomponent detectMob={detectMob} />
+                      </div>
+                </Route>
+                <Route exact path="/aboutme">
+                    <AboutMe detectMob={detectMob} />
+                </Route>
+                <Route exact path="/resume">
+                  <Resume  detectMob={detectMob}/>
+                </Route>
+                <Route exact path="/portfolio">
+                  <Portfolio detectMob={detectMob} />
+                </Route>
+                <Route exact path="/connect">
+                  <Connect />
+                </Route> 
+            </Switch>
             </div>
         </div>
       </Grid>

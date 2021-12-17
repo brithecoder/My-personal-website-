@@ -5,7 +5,7 @@ function  AboutMe(){
     return(
     <div>
                 <h2> This is About ME  </h2>
-      <div className="flex-container"> 
+      <div className="circle-flex-container"> 
          <motion.div className="motionDiv flex-child" 
          whileHover={{ scale: 1.2, rotate: 90 }}
          whileTap={{
@@ -43,7 +43,7 @@ function  AboutMe(){
        </button>
          </motion.div>
        </div> 
-       <img src="shecodecert.jpeg"  width="400px"/>
+       {/* <img src="shecodecert.jpeg"  width="400px"/> */}
     </div>
     )
 }

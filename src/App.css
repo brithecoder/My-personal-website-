@@ -8,9 +8,27 @@
 
 .navbar{
   background-color: #e8cebf;
-  padding:30px 20%;
+  padding:1.9rem calc((100vw - 1000px)/2);
+  z-index:10;
 }
 
+@media only screen and (max-width:768px) {
+ .navbar{padding:15rem;}
+ .navbar{display:none;}
+ .hamburgerMenu{display:block;}
+ .circle-flex-container{flex-direction: column;}
+}
+@media only screen and (min-width:769px){
+  .hamburgerMenu{display:none;}
+}
+
+.hamburgerMenu{
+  font-size: 20px;
+  padding:1.9rem;
+   background-color:#e8cebf;
+  border:3px solid pink;
+  text-align: left;
+}
 .AppTitle{
   font-size: 90px;
   font-family: 'Dosis', sans-serif;
@@ -53,6 +71,9 @@ background-color: #ddaf94
 .motionDiv{
   width:200px;
   
+}
+.circle-flex-container{
+  display:flex;
 }
 .flex-container {
   display: flex;
