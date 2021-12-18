@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink, useHistory } from 'react-router-dom'; 
 
-function Navbar(){
+function Sidebar(){
     return(
-        <div className="navbar">
-
-            
+        <div className="sidebar">
+            <div>   
             <NavLink to ="/aboutme">
            <button className="navbarbuttoncss flex-child"> About Me </button>
             </NavLink>
@@ -21,7 +20,9 @@ function Navbar(){
             <NavLink to ="/">
                 <button className="navbarbuttoncss flex-child"> Home</button>
             </NavLink>
+            </div>
         </div>
+
     )
 }
-export default Navbar;
+export default Sidebar;

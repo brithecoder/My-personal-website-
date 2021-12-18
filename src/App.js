@@ -12,6 +12,7 @@ import HamburgerMenu from './HamburgerMenu';
 import {styled} from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Sidebar from './Sidebar';
 import { 
   BrowserRouter as Router,
   Switch, 
@@ -49,7 +50,7 @@ function App() {
         <div className="app">
            <div className="container">
               <Navbar className="navbar"/>
-              <HamburgerMenu className="hamburgerMenu"/>
+              <HamburgerMenu className="hamburgerMenu" Sidebar={Sidebar}/>
               <Switch>
                 <Route exact path="/">
                     <div className='secondiv'>
