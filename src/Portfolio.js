@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 function Portfolio(){
     return(
         <div>
-              <h2> This is portfolio </h2> 
             <div className="circle-flex-container">
             <motion.div className="motionDiv flex-child"
          whileHover={{ scale: 1.2, rotate: 90 }}

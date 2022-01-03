@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 function Connect(){
     return(
         <div>
-            <h2>this is connect </h2>
             <div className="circle-flex-container">
               <motion.div className="motionDiv flex-child"
                 whileHover={{ scale: 1.2, rotate: 360}}
@@ -18,7 +17,7 @@ function Connect(){
        <a  className="connectLinks" href="https://www.linkedin.com/in/brianna-gordon" target="_blank" > Linkedin </a>
        </button>
          </motion.div>
-         <motion.div className="motionDiv flex-child"
+         <motion.div className="motionDiv"
          whileHover={{ scale: 1.2, rotate: 360 }}
          whileTap={{
            scale: 0.8,
