@@ -54,10 +54,11 @@
 }
 .homePageImg{
   position:absolute;
-  right:0%;
-  border-radius: 15px;
+  /* right:0%; */
+  border:9px solid pink;
+  border-radius: 20%;
   width:400px;
-  padding-right: 12px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 .navbarbuttoncss{
@@ -74,12 +75,7 @@
    background-color: #266150;
    color: #fefbe9;
 }
-.homepageTextbox{
-border:10px solid pink;
-margin-right: 450px;
-padding:70px 70px 100px 100px;
-background-color: #ddaf94
-}
+
 .circles{
   border:9px solid pink;
   border-radius:50%;
@@ -87,6 +83,7 @@ background-color: #ddaf94
   height: 200px;
   align-items:flex-boxbaseline;
   margin-top: 6px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 .motionDiv{
   width:200px;
@@ -94,8 +91,8 @@ background-color: #ddaf94
 }
 .circle-flex-container{
   display:flex;
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
 }
 .flex-container {
@@ -104,9 +101,10 @@ background-color: #ddaf94
 
 .flex-child {
   flex: 1;
-
-  /* border: 2px solid yellow; */
-}  
+}
+/* .hellobox{
+     border: 10px solid green;
+} */
 
 .flex-child:first-child {
   margin-right: 20px;
@@ -163,9 +161,11 @@ background-size: contain;
   grid-gap: 5vw;
   align-items: center;
 }
-.AboutmeSpace{
-  padding:5px;
+.aboutMeText{
+  text-align: center;
+  text-align-last:center;
+
 }
 .homepageTitle{
-  color:#266150;
+  color:#EF476F;
 }
