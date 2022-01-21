@@ -5,20 +5,21 @@ function  AboutMe(){
     return(
     <div className="AboutMeDiv">
        <button className="aboutMeBox"> 
-         <p className="aboutMeText">
+         
            <div className="aboutMeText">
-            My name is Brianna Gordon. I am originally from Detroit Michigan. I relocated to Los Angeles,
-            California to finish my undergraduate degree.
-            I graduated from California State University, Los Angeles where
-            I received a degree in Pan African Studies. After graduating I decided to do an introductory course in coding.
-            I enrolled in a course with SheCodes where I learned HTML,CSS,and JavaScript.
-            I decided to further my education in coding and  enrolled in a full time software
-             engineering bootcamp where I learned to create a full stack web application.
-            My stack includes React frontend with Ruby on Rails backend.
-           Some of my hobbies include hiking,art and music appreciation,and learning.
-            I love to travel and learn about different cultures. 
+            <ul className="aboutMeList">
+          <li> Hi, my name is Brianna Gordon. </li>
+   <br/> 
+<li>I’m a programmer currently based in Los Angeles and originally from Detroit. </li>
+<br/> 
+<li>I graduated from California State University, Los Angeles with a degree in African Diaspora Studies. </li>
+<br/> 
+<li>I’ve completed coding bootcamps with SheCodes and Flatiron. My stack includes: HTML, CSS, JavaScript, React, and Ruby on Rails.</li>
+<br/> 
+<li>My hobbies include: hiking, art and music appreciation. I love to travel and learn about different cultures. </li>
+</ul>
              </div>
-             </p>
+          
     
        </button>
        </div> 

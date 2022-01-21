@@ -20,7 +20,7 @@ function HamburgerMenu(){
        
   <Container className="hamburgerMenu">
  <Hamburger toggled={isOpen} toggle={setOpen} direction="right"    />
- {isOpen ? <Sidebar /> : null  }
+ {isOpen ? <Sidebar  setOpen={setOpen}/> : null  }
   </Container>
   
 
