@@ -6,9 +6,6 @@ function Sidebar({setOpen}){
     return(
         <div className="sidebar">
             <div>   
-            <NavLink to ="/aboutme">
-           <button className="navbarbuttoncss  flex-child" onClick={()=>setOpen(false)}> About Me </button>
-            </NavLink>
             <NavLink to ="/resume">
             <button className="navbarbuttoncss flex-child" onClick={()=>setOpen(false)}> Resume </button>
             </NavLink>

@@ -19,7 +19,7 @@ function Connect(){
        </button>
        </form>
          </motion.div>
-         <motion.div className="motionDiv"
+         <motion.div className="motionDiv flex-child"
          whileHover={{ scale: 1.2, rotate: 360 }}
          whileTap={{
            scale: 0.8,

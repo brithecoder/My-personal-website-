@@ -6,9 +6,7 @@ function Navbar(){
         <div className="navbar">
 
             
-            <NavLink to ="/aboutme">
-           <button className="navbarbuttoncss flex-child"> About Me </button>
-            </NavLink>
+        
             <NavLink to ="/resume">
             <button className="navbarbuttoncss flex-child"> Resume </button>
             </NavLink>

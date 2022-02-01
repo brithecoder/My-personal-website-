@@ -57,9 +57,6 @@ function App() {
                       <Secondcomponent detectMob={detectMob} />
                       </div>
                 </Route>
-                <Route exact path="/aboutme">
-                    <AboutMe detectMob={detectMob} />
-                </Route>
                 <Route exact path="/resume">
                   <Resume  detectMob={detectMob}/>
                 </Route>
